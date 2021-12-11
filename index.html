@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hộp thư đến (68) - ducpro2001x@gmail.com</title>
     <link rel="shortcut icon" href="./img/gmail.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header class="h-nav"> 
         <div class="h-left">
             <svg focusable="false" width="24px" height="24px" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
@@ -27,5 +29,54 @@
             <img src="./img/avatar.PNG" alt="">
         </div>
     </header>
-</body>
+    <body>
+        <header class="b-nav container-fluid">
+
+        </header>
+        <section class="main-container">
+            <div class="flex-container">
+                <aside class="menu-left">
+                    <div class="compose">
+                        <div class="btn">
+                            <a href=""><img src="../img/compose.png" alt="">
+                                <p>Soạn thư</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-list">
+                        <a href="#"><img src="../img/inbox.png" alt="" class="firsta"><span class="header">Hộp thư đến</span><span class="qual">68</span></a>
+                        <a href="#"><i class="fas fa-star"></i>Có gắn sao</a>
+                        <a href="#"><i class="fas fa-clock"></i>Đã tạm ẩn</a>
+                        <a href="#"><i class="fas fa-paper-plane"></i>Đã gửi</a>
+                        <a href="#"><i class="fas fa-file"></i>Thư nháp</a>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#"><img src="./img/label_important_black.png" alt="">Quan trọng</a>
+                              <a href="#"><img src="./img/hangout_black.png" alt="">Trò chuyện</a>
+                              <a href="#"><img src="./img/schedule_send_black.png" alt="">Đã lên lịch</a>
+                              <a href="#"><img src="./img/mail_black.png" alt="">Tất cả thư</a>
+                              <a href="#"><i class="bi bi-exclamation-octagon-fill"></i>Thư rác</a>
+                              <a href="#"><i class="bi bi-trash-fill"></i>Thùng rác</a>
+                              <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="#home">Home</a>
+                                  <a href="#about">About</a>
+                                  <a href="#contact">Contact</a>
+                                </div>
+                              </div>
+                              <a href="#"><i class="bi bi-gear-fill"></i>Quản lý nhãn</a>
+                              <a href="#"><i class="bi bi-plus-lg"></i>Tạo nhãn mới</a>
+                            </div>
+                          </div>
+                    </div>
+                </aside>
+                <main class="main-content">center</main>
+                <aside class="menu-right">right</aside>
+            </div>
+        </section>
+    </body>
+    <script src="./js/myjs.js"></script>
+  </body>
 </html>
