@@ -105,6 +105,16 @@ header .h-search svg{
     background-color: rgba(60, 64, 67, 0.08);
     cursor: pointer;
 }
+header .h-search svg:nth-child(1){
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+ }
+ header .h-search svg:nth-child(1):hover{
+    background-color: rgba(60, 64, 67, 0.08);
+    cursor: pointer;
+}
 
 /* CSS header .h-search input */
 header .h-search input{
@@ -209,14 +219,13 @@ header .h-right img{
     margin-left: -20px;
 }
 
-/* CSS .flex-container .menu-left .compose .btn p */
-
 /* CSS .flex-container .nav-list */
 .flex-container .nav-list{
-    height: 50%;
+    height: 40%;
     overflow: hidden;
     line-height: 1.6rem;
     margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
  }
  .flex-container .nav-list:hover{
      overflow-y: scroll ;
@@ -258,18 +267,16 @@ header .h-right img{
      margin-right: 1.2rem;
  }
 
-/* CSS drop down */
-.dropdown {
+/* CSS .nav-body .dropdown */
+.nav-body .dropdown {
     position: relative;
     display: inline-block;
   }
   .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f1f1f1; */
     min-width: 264px;
     overflow: auto;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
   }
   .dropdown-content a {
@@ -278,7 +285,19 @@ header .h-right img{
     text-decoration: none;
     display: block;
   }
-
+  .dropdown-content-1 {
+    display: none;
+    position: absolute;
+    min-width: 264px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  .dropdown-content-1 a {
+    color: black;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+  }
   .show {display: block;}
 
   .nav-body button{
@@ -288,7 +307,7 @@ header .h-right img{
       color: #555;
       display: flex;
       padding: 3px;
-      padding-left: 1.6rem;
+      padding-left: 25px;
       width: 240px;
       font-family: sans-serif;
       font-size: 0.889rem;
@@ -298,3 +317,211 @@ header .h-right img{
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0px 25px 25px 0;
   }
+
+  .nav-body .dropdown .dropbtn1{
+    padding-left: 8px;
+    display: flex;
+    text-align: center;
+  }
+
+  .nav-body .dropdown .dropbtn1 i{
+      font-size: 10px;
+      color: #767676;
+      margin: 1px 0px 0px 0px;
+  }
+
+  .nav-body .dropdown .dropbtn1 span{
+      margin: 3px 16px 0 6px;
+      font-size: 20px;
+      color: #767676;
+
+  }
+
+/* CSS .menu-left a */
+.menu-left a{
+    display: block;
+    /* text-decoration: none; */
+    align-items: center;
+}
+
+/* CSS .menu-left .nav-meet */
+.menu-left .nav-meet{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    align-items: center;
+    line-height: 1.6rem;
+ }
+
+ .menu-left .nav-meet h2{
+    color: #3d3d3d;
+    font-size: 15px;
+    font-weight:600;
+    padding-bottom: 0.4rem;
+    padding-left: 1.2rem;
+ }
+
+ .menu-left .nav-meet a{
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 1.2rem;
+    width: 83%;
+ }
+
+ .menu-left .nav-meet i{
+    color: #767676;
+    font-size: 1rem;
+    margin-right: 1.2rem;
+ }
+
+ .menu-left .nav-meet a:hover{
+     background-color: rgba(0, 0, 0, 0.1);
+     border-radius: 0px 25px 25px 0;
+ }
+
+ /* CSS .menu-left .hangouts */
+ .menu-left .hangouts{
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    align-items: center;
+    line-height: 1.6rem;
+ }
+
+ .menu-left .hangouts h2{
+    color: #3d3d3d;
+    font-size: 15px;
+    font-weight:600;
+    padding-bottom: 0.4rem;
+    padding-left: 1.2rem;
+ }
+
+ .menu-left .hangouts a{
+     display: flex;
+     align-items: center;
+     color: #555;
+     font-size: 14px;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+     width: 250px;
+     text-decoration: none;
+ }
+
+ .menu-left .hangouts img{
+     align-items: center;
+     width: 45px;
+     height: 45px;
+     margin-left: 12px;
+ }
+
+ .menu-left .hangouts .idown{
+    margin:1px 90px 0 5px;
+    font-size: 10px;
+ }
+
+ .menu-left .hangouts .iplus{
+     font-size: 18px;
+     cursor: pointer;
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
+     padding: 6px 10px 10px 8px;
+ }
+
+ .menu-left .hangouts .iplus:hover{
+    background-color: #ebecec;
+ }
+
+ /* CSS .menu-left .hangout-icon */
+ .menu-left .hangout-icon{
+     text-align: center;
+ } 
+
+ .menu-left .hangout-icon i{
+     color: rgb(184, 180, 180);
+     font-size: 70px;
+ }
+
+ /* CSS main-content */
+.main-content{
+    flex: 0 0 77%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+ /* CSS Menu-right */
+.menu-right{
+    flex: 0 0 4%;
+    display: flex;
+    height: 680px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #f1f3f4;
+    padding-top: 1.5rem;
+    position: sticky;
+    right: 0;
+    background-color: #fff;
+}
+
+.menu-right .img-top{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 50%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+.menu-right .img-top a{
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px 10px 11px;
+    margin-bottom: 13px;
+}
+
+.menu-right .img-top img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 34px;
+
+}
+
+.menu-right .img-top a:hover{
+    background-color: #ebecec;
+}
+
+.menu-right .icon-down{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #5f5757;
+}
+
+.menu-right .icon-down .icon-right{
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ebecec;
+    width: 40px;
+    height: 40px;
+    padding: 11px 11px 11px 14px;
+}
+
+.menu-right .icon-down .icon-plus{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px 10px 11px;
+}
+
+.menu-right .icon-down .icon-plus:hover{
+    background-color: #ebecec;
+}
