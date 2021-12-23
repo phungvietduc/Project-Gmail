@@ -169,9 +169,8 @@ header .h-right img{
 
 /* CSS main body .main-container .flex-container .menu-left*/
 .flex-container .menu-left{
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 0 0 19%;
+    display: block;
+    width: 280px;
     height: 560px;
     position: sticky;
     top: 60px;
@@ -220,20 +219,20 @@ header .h-right img{
 }
 
 /* CSS .flex-container .nav-list */
-.flex-container .nav-list{
-    height: 40%;
-    overflow: hidden;
+ .nav-list{
+    max-height: 45%;
+    overflow-x: hidden;
     line-height: 1.6rem;
     margin-top: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    
  }
- .flex-container .nav-list:hover{
+ .nav-list:hover{
      overflow-y: scroll ;
  } 
  .flex-container .nav-list a{
     text-decoration: none;
     color: #555;
-    display: flex;
     padding: 3px;
     padding-left: 1.6rem;
     width: 90%;
@@ -243,6 +242,7 @@ header .h-right img{
      background-color: rgba(0, 0, 0, 0.1);
      border-radius: 0px 25px 25px 0;
  }
+
  .flex-container .nav-list .nav-top a:first-child{
      display: flex;
      justify-content: flex-start;
@@ -251,7 +251,7 @@ header .h-right img{
      font-weight: bold;
      background-color: rgb(252, 232, 230);
      border-radius: 0 25px 25px 0;
-     max-width:240px;
+     max-width:237px;
  }
  .flex-container .nav-list img{
      margin-right: 1.2rem;
@@ -259,7 +259,7 @@ header .h-right img{
  }
  .nav-list .qual{
      font-size: 0.8rem;
-     padding-left: 60px;
+     padding-left: 48px;
  }
  .flex-container .nav-list i{
      color: #767676;
@@ -285,13 +285,14 @@ header .h-right img{
     text-decoration: none;
     display: block;
   }
-  .dropdown-content-1 {
+  .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     min-width: 264px;
     overflow-y: auto;
     z-index: 1;
   }
+
   .dropdown-content-1 a {
     color: black;
     padding: 12px 0px;
@@ -352,6 +353,7 @@ header .h-right img{
     padding: 0.5rem 0 0.5rem 0.5rem;
     align-items: center;
     line-height: 1.6rem;
+    
  }
 
  .menu-left .nav-meet h2{
@@ -388,6 +390,7 @@ header .h-right img{
     padding: 0.5rem 0 0.5rem 0.5rem;
     align-items: center;
     line-height: 1.6rem;
+    max-height: 200px;
  }
 
  .menu-left .hangouts h2{
@@ -436,11 +439,12 @@ header .h-right img{
  /* CSS .menu-left .hangout-icon */
  .menu-left .hangout-icon{
      text-align: center;
+     
  } 
 
  .menu-left .hangout-icon i{
      color: rgb(184, 180, 180);
-     font-size: 70px;
+     font-size: 50px;
  }
 
  /* CSS main-content */
