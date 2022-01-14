@@ -573,8 +573,8 @@ header .h-search{
    background-color: #ebecec;
  }
 
-/* CSS .main-content .main-box */
-.main-content .main-box {
+/* CSS .main-content .main-nav */
+.main-content .main-nav {
    display: flex;
    width: 99%;
    height: 60px;
@@ -585,7 +585,7 @@ header .h-search{
 
  }
 
- .main-content .main-box .main-header{
+ .main-content .main-nav .main-header{
    display: flex;
    align-items: center;
    width: 250px;
@@ -598,17 +598,73 @@ header .h-search{
    overflow: hidden;
  }
  
- .main-content .main-box .main-header:first-child{
+ .main-content .main-nav .main-header:first-child{
     color: #d93025;
     padding-left: 15px;
     border-bottom: 3px solid #d93025;
  }
 
- .main-content .main-box .main-header .icon{
+ .main-content .main-nav .main-header .icon{
     font-size: 20px;
  }
- .main-content .main-box .main-header h4{
+ .main-content .main-nav .main-header h4{
     margin-left: 15px;
+    font-size: 13px;
+ }
+
+ /* CSS .main-content .main-box */
+ .main-content .main-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    padding: 10px 0px;
+    box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, 0.12);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #202124;
+ }
+
+ /* CSS .main-content .main-box .main-list-left*/
+ .main-content .main-box .main-list-left{
+    display: flex;
+    flex: 0 0 25%;
+    min-width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+ }
+ .main-content .main-box .main-list-left:first-child{
+    margin-right: 15px;
+ }
+
+ .main-content .main-box .main-list-left i{
+    color: rgba(0, 0, 0, 0.3);
+    align-self: center;
+    font-size: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+ }
+
+ .main-content .main-box .main-list-left h4{
+    font-size: 15px;
+ }
+
+ /* CSS .main-content .main-box .main-list-center*/
+ .main-content .main-box .main-list-center{
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
  }
  /* CSS Menu-right */
 .menu-right{
