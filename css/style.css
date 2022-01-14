@@ -170,7 +170,7 @@ header .h-search{
  /* CSS main body .main-container .flex-container .menu-left*/
  .flex-container .menu-left{
     display: block;
-    width: 280px;
+    width: 270px;
     height: 560px;
     position: sticky;
     top: 60px;
@@ -220,11 +220,12 @@ header .h-search{
 
 /* CSS .flex-container .nav-list */
  .nav-list{
-    max-height: 45%;
+    height: 45%;
     overflow-x: hidden;
     line-height: 1.6rem;
     margin-top: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
     
  }
  .nav-list:hover{
@@ -272,9 +273,10 @@ header .h-search{
     position: relative;
     display: inline-block;
   }
+  
   .dropdown-content {
     display: none;
-    /* position: absolute; */
+    position: absolute;
     min-width: 264px;
     overflow: auto;
     z-index: 1;
@@ -299,6 +301,16 @@ header .h-search{
     text-decoration: none;
     display: block;
   }
+
+  .drdown1 i{
+   text-decoration: none;
+   color: #555;
+   padding: 3px;
+   padding-left: 18px;
+   width: 100%;
+   align-items: center;
+  }
+
   .show {display: block;}
 
   .nav-body button{
@@ -309,7 +321,7 @@ header .h-search{
       display: flex;
       padding: 3px;
       padding-left: 25px;
-      width: 240px;
+      width: 230px;
       font-family: sans-serif;
       font-size: 0.889rem;
       line-height: 1.6rem;
@@ -439,7 +451,8 @@ header .h-search{
  /* CSS .menu-left .hangout-icon */
  .menu-left .hangout-icon{
      text-align: center;
-     
+     overflow-x: hidden;
+     overflow-y: scroll;
  } 
 
  .menu-left .hangout-icon i{
@@ -463,7 +476,6 @@ header .h-search{
     width: 99%;
     height: 50px;
     position: sticky;
-    top: 10vh;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, 0.122);
@@ -477,18 +489,20 @@ header .h-search{
     color: #7c7c7c;
     display: flex;
     align-items: center;
+    margin-top: 0px;
  }
 
  .main-content .content-nav .left-icon .ipn{
      color: #444343;
      cursor: pointer;
      align-items: center;
+     margin-left: 13px;
  }
 
  .main-content .content-nav .left-icon .inp{
     font-size: 17px;
     border-radius: 10%;
-    padding: 10px 3px 10px 3px;
+    padding: 8px 3px 8px 3px;
  }
 
  .main-content .content-nav .left-icon .inp:hover{
@@ -498,7 +512,7 @@ header .h-search{
  .main-content .content-nav .left-icon .left-icon-1{
      font-size: 10px;
      align-items: center;
-     padding: 15px 5px 15px 5px;
+     padding: 14px 5px 10px 5px;
      border-radius: 10%;
      margin-right: 5px;
  }
@@ -557,6 +571,44 @@ header .h-search{
 
  .main-content .content-nav .right-icon .pen-2:hover{
    background-color: #ebecec;
+ }
+
+/* CSS .main-content .main-box */
+.main-content .main-box {
+   display: flex;
+   width: 99%;
+   height: 60px;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: flex-start;
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+
+ }
+
+ .main-content .main-box .main-header{
+   display: flex;
+   align-items: center;
+   width: 250px;
+   height: 100%;
+   color: #5f6368;
+   font-size: 15px;
+   justify-content: flex-start;
+   margin-right: 15px;
+   background-color: #fff;
+   overflow: hidden;
+ }
+ 
+ .main-content .main-box .main-header:first-child{
+    color: #d93025;
+    padding-left: 15px;
+    border-bottom: 3px solid #d93025;
+ }
+
+ .main-content .main-box .main-header .icon{
+    font-size: 20px;
+ }
+ .main-content .main-box .main-header h4{
+    margin-left: 15px;
  }
  /* CSS Menu-right */
 .menu-right{
@@ -631,3 +683,4 @@ header .h-search{
  .menu-right .icon-down .icon-plus:hover{
     background-color: #ebecec;
 }
+
