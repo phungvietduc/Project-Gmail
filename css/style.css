@@ -481,6 +481,9 @@ header .h-search{
     box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, 0.122);
  }
 
+ .main-content .content-nav a{
+    color: #7c7c7c;
+ }
  /* CSS .main-content .content-nav .left-icon */
  .main-content .content-nav .left-icon{
     flex-flow: row nowrap;
@@ -608,6 +611,7 @@ header .h-search{
  .main-content .main-nav .main-header .icon{
     font-size: 20px;
     margin-left: 15px;
+    color: #5f6368 !important;
  }
  .main-content .main-nav .main-header h4{
     margin-left: 15px;
@@ -709,6 +713,10 @@ header .h-search{
     padding-right:  10px;
  }
 
+ .main-content .main-box:hover .main-list-right a{
+    color: rgb(95, 92, 92);;
+ }
+
  .main-content .main-box:hover{
     box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0px 1px 2px 0 rgba(60,64,67,0.3), 0px 1px 3px 1px rgba(60,64,67,0.15);
     z-index: 2;
@@ -800,3 +808,151 @@ header .h-search{
     background-color: #ebecec;
 }
 
+/* CSS .send-mail */
+.send-mail{
+   position: absolute;
+   bottom: 0px;
+   right: 80px;
+   background-color: #3f3e3e;
+   width: 40%;
+   height: 70%;
+   max-width: 575px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid whitesmoke;
+   justify-content: space-between;
+   box-shadow: 0px 5px 7px 8px rgba(0, 0, 0, 0.24);
+ }
+
+ .send-mail .header{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(51, 49, 49);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .send-mail .header .header-left{
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px 0px;
+ }
+
+ .send-mail .header .header-right{
+    text-align: center;
+    margin-left: 380px;
+    align-items: center;
+ }
+
+ .send-mail .header .header-right a{
+    color: white;
+    margin-right: 6px;
+    padding: 4px ;
+ }
+
+ .send-mail .header .header-right a:hover{
+    background-color: gray;
+}
+
+/* CSS .send-mail .main */
+.send-mail .main{
+   background-color: #fff;
+   margin-bottom: 500px;
+   width: 100%;
+ }
+
+ .send-mail .main .address{
+   display: flex;
+   align-items: center;
+   padding: 9px 0px;
+ } 
+
+ .send-mail .main .address a{
+   color: gray;
+   font-size: 15px;
+   text-decoration: none;
+ }
+
+ .send-mail .main .address input{
+   border: none;
+   outline: none;
+   width: 70%;
+ }
+
+ .send-mail .main .address .add1{
+   margin-left: 14px;
+   margin-right: 5px;
+ }
+
+ .send-mail .main .address .add2{
+   margin-left: 20px;
+   margin-right: 5px;
+}
+
+/* CSS .send-mail .main .line */
+.send-mail .main .line{
+   border-bottom: 1px solid rgb(228, 220, 220);
+   width: 95%;
+   margin-left: 14px;
+}
+
+/* CSS .send-mail .main .tittle*/
+.send-mail .main .tittle{
+   display: flex;
+   align-items: center;
+   padding: 9px 0px;
+}
+
+.send-mail .main .tittle input{
+   border: none;
+   outline: none;
+   width: 70%;
+}
+
+.send-mail .main .tittle a{
+   color: gray;
+   font-size: 15px;
+   text-decoration: none;
+   margin-left: 14px;
+   margin-right: 5px;
+}
+
+/* CSS .send-mail .main .inbox */
+.send-mail .main .inbox{
+   width: 100%;
+   height: 330px;
+}
+
+.send-mail .main .inbox input{
+   border: none;
+   outline: none;
+   width: 95%;
+   height: 80%;
+   margin: 5px 10px 0 10px;
+}
+
+.send-mail .main .icon{
+   margin-bottom: 31px;
+}
+
+.send-mail .main .icon button{
+   width: 85px;
+   height: 35px;
+   background-color: rgb(72, 72, 252);
+   margin-left: 20px;
+   border-radius: 8%;
+}
+
+.send-mail .main .icon button a{
+   font-size: 15px;
+   text-decoration: none;
+   color: white;
+}
+
+.send-mail .main .icon button a i{
+   font-size: 10px;
+   margin-left: 8px;
+}
