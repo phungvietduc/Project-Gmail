@@ -36,11 +36,10 @@
         <section class="main-container">
             <div class="flex-container">
                 <aside class="menu-left">
-                    <div class="compose">
+                    <div class="compose" onclick="send()" id="send"> 
                         <div class="btn">
-                            <a href=""><img src="../img/compose.png" alt="">
+                            <img src="../img/compose.png" alt="">
                                 <p>Soạn thư</p>
-                            </a>
                         </div>
                     </div>
                     <div class="nav-list">
@@ -295,7 +294,7 @@
                 </aside> 
             </div>
         </section>
-        <div class="send-mail">
+        <div class="send-mail" style="display: none;" id="sendto">
           <div class="header">
             <div class="header-left">
               <p>Thư mới</p>

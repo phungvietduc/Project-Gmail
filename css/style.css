@@ -188,7 +188,7 @@ header .h-search{
  }
 
  /* CSS main body .main-container .flex-container .menu-left .compose .btn a */
- .flex-container .menu-left .compose .btn a{
+ .flex-container .menu-left .compose .btn {
     display: flex;
     width: 54%;
     flex-flow: row nowrap;
@@ -205,8 +205,9 @@ header .h-search{
     min-width: 56px;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
  }
- .flex-container .menu-left .compose .btn a:hover{
+ .flex-container .menu-left .compose .btn:hover{
     background-color: #fafafb;
     box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3),0 4px 8px 3px rgba(60,64,67,0.15);
  }
@@ -810,7 +811,7 @@ header .h-search{
 
 /* CSS .send-mail */
 .send-mail{
-   position: absolute;
+   position: fixed ;
    bottom: 0px;
    right: 80px;
    background-color: #3f3e3e;
@@ -934,8 +935,10 @@ header .h-search{
    margin: 5px 10px 0 10px;
 }
 
+/* CSS .send-mail .main .icon*/
 .send-mail .main .icon{
-   margin-bottom: 31px;
+   /* margin-bottom: 31px; */
+   padding-bottom: 26px;
 }
 
 .send-mail .main .icon button{
