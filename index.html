@@ -54,7 +54,7 @@
                         </div>
                         <div class="nav-body">
                           <div class="dropdown drdown">
-                            <button onclick="myFunction()" class="dropbtn" id="cd"><i class="bi bi-chevron-down"></i>Danh sách mở rộng</button>
+                            <p onclick="myFunction()" class="dropbtn" id="cd" style="width: 200px;"><i class="bi bi-chevron-down"></i>Danh sách mở rộng</p>
                             <div id="myDropdown" class="dropdown-content">
 
                               <p class="nav__left" onclick="nav5()"><i class="bi bi-bookmark-fill"></i>Quan trọng</p>
@@ -96,6 +96,9 @@
                       <a href="#" style="color: blue;">Tìm người nào đó</a>
                     </div>
                 </aside>
+
+                  <!-- hộp thư đến -->
+
                 <main class="main-content" style="display: block;" id="main">
                   <div class="content-nav">
                     <div class="left-icon">
@@ -282,7 +285,40 @@
                     <div class="date">10 thg 10</div>
                   </div>
                 </main>
+
+                <!-- có gắn dấu sao -->
+
                 <main class="main-content" style="display: none;" id="main1">
+                  <div class="button__header">
+                    <button>
+                      <i class="bi bi-person-circle"></i>
+                      <p>Từ</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-file-minus-fill"></i>
+                      <p style="margin-right:10px ;">Loại trừ danh mục Mạng Xã Hội</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-file-minus-fill"></i>
+                      <p style="margin-right:10px ;">Loại trừ danh mục quảng cáo</p>
+                    </button>
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                  </div>
                   <div class="content-nav">
                     <div class="left-icon">
                       <div class="ipn">
@@ -296,45 +332,373 @@
                     </div>
                   </div>
                 </main>
+
+                <!-- tạm ẩn -->
+
                 <main  class="main-content"  id="main2" style="display: none;">
-                  <p>1</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- thư đã gửi -->
+
                 <main  class="main-content"  id="main3" style="display: none;">
-                  <p>Đã gửi</p>
+                  <div class="button__header">
+                    
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                  
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                  </div>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-box">
+                    <div class="main-list-left">
+                      <p id="iconc"></p>
+                      <p id="toi"></p><h4 style="margin-left: 5px;" class="ten" id="ten"></h4>
+                    </div>
+                    <div class="main-list-center" style="display: flex;">
+                      <p class="" id="tm" style="padding-right: 5px;" ></p>
+                      <p id="qq"></p>
+                      <p class="" id="nd" style="padding-left: 5px;"></p>
+                    </div>
+                    <div class="main-list-right">
+                      <a href=""><i class="bi bi-download"></i></a>
+                      <a href=""><i class="bi bi-envelope-open-fill"></i></a>
+                      <a href=""><i class="bi bi-trash-fill"></i></a>
+                      <a href=""><i class="bi bi-clock-fill"></i></a>
+                    </div>
+                    <div class="date" id="date"></div>
+                  </div>
                 </main>
+
+                <!-- Thư nháp -->
+
                 <main  class="main-content"  id="main4" style="display: none;">
-                  <p>3</p>
+                  
+                  <div class="button__header">  
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                    </div>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- quan trọng -->
+
                 <main id="main5" style="display: none;"  class="main-content" >
-                  <p>4</p>
+                  <div class="button__header">
+                    <button>
+                      <i class="bi bi-person-circle"></i>
+                      <p>Từ</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-envelope-x-fill"></i>
+                      <p style="margin-right:10px ;">Chưa đọc</p>
+                    </button>
+                  
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                    </div>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- trò chuyện -->
+
                 <main id="main6" style="display: none;"  class="main-content" >
-                  <p>5</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- đã lên lịch -->
+
                 <main id="main7" style="display: none;"  class="main-content" >
-                  <p>6</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- Tất cả thư -->
+
                 <main id="main8" style="display: none;"  class="main-content" >
-                  <p>7</p>
+                  <div class="button__header">
+                    <button>
+                      <i class="bi bi-person-circle"></i>
+                      <p>Từ</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-envelope-x-fill"></i>
+                      <p style="margin-right:10px ;">Chưa đọc</p>
+                    </button>
+                  
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                    </div>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- Thư rác -->
+
                 <main id="main9" style="display: none;"  class="main-content" >
-                  <p>8</p>
+                  <div class="button__header">
+                    <button>
+                      <i class="bi bi-person-circle"></i>
+                      <p>Từ</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-calendar-week"></i>
+                      <p>Mọi lúc</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-paperclip"></i>
+                      <p style="margin-right:10px ;">Tệp tin đính kèm</p>
+                    </button>
+                    <button>
+                      <i class="bi bi-send"></i>
+                      <p>Đến</p>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-envelope-x-fill"></i>
+                      <p style="margin-right:10px ;">Chưa đọc</p>
+                    </button>
+                  
+                    <a href="" style="text-decoration: none; margin-left: 10px; margin-top: 7px; color: blue;">Tìm kiếm nâng cao</a>
+                    </div>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- Thùng rác -->
+
                 <main id="main10" style="display: none;"  class="main-content" >
-                  <p>9</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="con" style="height: 56px;display: flex; align-items: center;justify-content: center;background-color: #f1f3f4;margin-top: 4px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                      <P style="display: flex; align-items: center;justify-content: center;">Tất cả thư sẽ được xóa trong vòng 30 ngày</P>
+                    </div>
+                  
+                    <div class="con" style="height: 56px;display: flex; align-items: center;justify-content: center;">
+                      <P style="display: flex; align-items: center;justify-content: center;">Không có cuộc trò chuyên trong thùng rác</P>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- Mạng xã hội -->
+
                 <main id="main11" style="display: none;"  class="main-content" >
-                  <p>10</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- Nội dung cập nhật -->
+
                 <main id="main12" style="display: none;"  class="main-content" >
-                  <p>11</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- diễn đàn -->
+
                 <main id="main13" style="display: none;"  class="main-content" >
-                  <p>1ádasd</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+
+                 <!-- quảng cáo -->
+
                 <main id="main14" style="display: none;"  class="main-content" >
-                  <p>13</p>
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </main>
+                
                 <aside class="menu-right" >
                   <div class="img-top" id="menu__right" style="display: block;">
                     <a href=""><img src="./img/calendar_2x.png" alt=""></a>
@@ -355,15 +719,15 @@
               <p>Thư mới</p>
             </div>
             <div class="header-right">
-              <a href=""><i class="bi bi-dash-lg"></i></a>
-              <a href=""><i class="bi bi-arrows-angle-expand" style="font-size: 14px; padding: 6px 7px; margin: 0px;"></i></a>
-              <a href=""><i class="bi bi-x"></i></a>
+              <p ><i class="bi bi-dash-lg"></i></p>
+              <p ><i class="bi bi-arrows-angle-expand" style="font-size: 14px; padding: 6px 7px; margin: 0px;"></i></p>
+              <p onclick="out()"><i class="bi bi-x"></i></p>
             </div>
           </div>
           <div class="main">
             <div class="address">
               <a href="#" class="add1">Đến</a>
-              <input type="textarea" id="input__dc">
+              <input type="textarea" id="input__ten">
               <a href="#" class="add2">Cc</a>
               <a href="#" class="add2">Bcc</a>
             </div>
@@ -377,11 +741,12 @@
               <input type="text" id="input__nd">
             </div>
             <div class="icon">
-              <button onclick="send__mail()"><a href="">Gửi<i class="bi bi-caret-down-fill"></i></a></button>  
+              <button onclick="send__mail()"><p>Gửi<i class="bi bi-caret-down-fill"></i></p></button>  
             </div>
           </div>
         </div> 
     </body>
     <script src="./js/myjs.js"></script>
+
   </body>
 </html>
