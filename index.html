@@ -15,7 +15,7 @@
     <header class="h-nav"> 
         <div class="h-left">
             <svg focusable="false" width="24px" height="24px" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-            <img src="../img/logo_gmail.png" alt="GmailLogo" title="Gmail">
+            <img src="./img/logo_gmail.png" alt="GmailLogo" title="Gmail">
         </div>  
         <div class="h-search">
             <svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"></path><path d="M0,0h24v24H0V0z" fill="none"></path></svg>
@@ -38,39 +38,43 @@
                 <aside class="menu-left">
                     <div class="compose" onclick="send()" id="send"> 
                         <div class="btn">
-                            <img src="../img/compose.png" alt="">
+                            <img src="./img/compose.png" alt="">
                                 <p>Soạn thư</p>
                         </div>
                     </div>
                     <div class="nav-list">
                         <div class="nav-top">
-                          <a href="#"><img src="../img/inbox.png" alt="" class="reda"><span class="header">Hộp thư đến</span><span class="qual">68</span></a>
-                          <a href="#"><i class="bi bi-star-fill"></i></i>Có gắn sao</a>
-                          <a href="#"><i class="bi bi-clock-fill"></i>Đã tạm ẩn</a>
-                          <a href="#"><i class="fas fa-paper-plane"></i>Đã gửi</a>
-                          <a href="#"><i class="bi bi-file-earmark-fill"></i>Thư nháp</a>
+                            <div class="container">
+                              <p class="nav__left" onclick="nav()"><img src="./img/inbox.png" alt="" class="reda"><span class="header">Hộp thư đến</span><span class="qual">68</span></p>
+                              <p class="nav__left" onclick="nav1()"><i class="bi bi-star-fill"></i></i>Có gắn sao</p>
+                              <p class="nav__left" onclick="nav2()"><i class="bi bi-clock-fill"></i>Đã tạm ẩn</p>
+                              <p class="nav__left" onclick="nav3()"><i class="fas fa-paper-plane"></i>Đã gửi</p>
+                              <p class="nav__left" onclick="nav4()" ><i class="bi bi-file-earmark-fill"></i>Thư nháp</p>
+                            </div>
                         </div>
                         <div class="nav-body">
                           <div class="dropdown drdown">
-                            <button onclick="myFunction()" class="dropbtn"><i class="bi bi-chevron-down"></i>Danh sách mở rộng</button>
+                            <button onclick="myFunction()" class="dropbtn" id="cd"><i class="bi bi-chevron-down"></i>Danh sách mở rộng</button>
                             <div id="myDropdown" class="dropdown-content">
-                              <a href="#"><i class="bi bi-bookmark-fill"></i>Quan trọng</a>
-                              <a href="#"><i class="bi bi-chat-quote-fill"></i>Trò chuyện</a>
-                              <a href="#"><i class="bi bi-send-plus-fill"></i>Đã lên lịch</a>
-                              <a href="#"><i class="bi bi-envelope-fill"></i>Tất cả thư</a>
-                              <a href="#"><i class="bi bi-exclamation-octagon-fill"></i>Thư rác</a>
-                              <a href="#"><i class="bi bi-trash-fill"></i>Thùng rác</a>
+
+                              <p class="nav__left" onclick="nav5()"><i class="bi bi-bookmark-fill"></i>Quan trọng</p>
+                              <p class="nav__left" onclick="nav6()"><i class="bi bi-chat-quote-fill"></i>Trò chuyện</p>
+                              <p class="nav__left" onclick="nav7()"><i class="bi bi-send-plus-fill"></i>Đã lên lịch</p>
+                              <p class="nav__left" onclick="nav8()"><i class="bi bi-envelope-fill"></i>Tất cả thư</p>
+                              <p class="nav__left" onclick="nav9()"><i class="bi bi-exclamation-octagon-fill"></i>Thư rác</p>
+                              <p class="nav__left" onclick="nav10()"><i class="bi bi-trash-fill"></i>Thùng rác</p>
+                              
                               <div class="dropdown">
                                 <button onclick="myFunction1()" class="dropbtn1"><i class="bi bi-caret-down-fill icondown"></i><span class="material-icons"> label </span>Danh mục</button>
                                 <div id="myDropdown1" class="dropdown-content drdown1">
-                                  <a href="#"><i class="bi bi-people-fill"></i><b>Mạng xã hội</b></a>
-                                  <a href="#"><i class="bi bi-exclamation-circle-fill"></i><b>Nội dung cập...</b></a>
-                                  <a href="#"><i class="bi bi-chat-left-fill"></i>Diễn đàn</a>
-                                  <a href="#"><i class="bi bi-tag-fill"></i><b>Quảng cáo</b></a>
+                                  <p class="nav__left"  onclick="nav11()"><i class="bi bi-people-fill"></i>Mạng xã hội</p>
+                                  <p class="nav__left"  onclick="nav12()"><i class="bi bi-exclamation-circle-fill"></i>Nội dung cập...</p>
+                                  <p class="nav__left"  onclick="nav13()"><i class="bi bi-chat-left-fill"></i>Diễn đàn</p>
+                                  <p class="nav__left"  onclick="nav14()"><i class="bi bi-tag-fill"></i>Quảng cáo</p>
                                 </div>
                               </div>
-                                  <a href="#"><i class="bi bi-gear-fill"></i>Quản lý nhãn</a>
-                                  <a href="#"><i class="bi bi-plus-lg"></i>Tạo nhãn mới</a>
+                                  <p class="nav__left"><i class="bi bi-gear-fill"></i>Quản lý nhãn</p>
+                                  <p class="nav__left"><i class="bi bi-plus-lg"></i>Tạo nhãn mới</p>
                             </div>
                          </div>
                         </div>
@@ -92,7 +96,7 @@
                       <a href="#" style="color: blue;">Tìm người nào đó</a>
                     </div>
                 </aside>
-                <main class="main-content">
+                <main class="main-content" style="display: block;" id="main">
                   <div class="content-nav">
                     <div class="left-icon">
                       <div class="ipn">
@@ -272,16 +276,67 @@
                       </p>
                     </div>
                     <div class="main-list-right">
-                      <a href=""><i class="bi bi-download"></i></a>
-                      <a href=""><i class="bi bi-envelope-open-fill"></i></a>
-                      <a href=""><i class="bi bi-trash-fill"></i></a>
+                      <a href=""><i class="bi bi-downloanill"></i></a>
                       <a href=""><i class="bi bi-clock-fill"></i></a>
                     </div>
                     <div class="date">10 thg 10</div>
                   </div>
                 </main>
-                <aside class="menu-right">
-                  <div class="img-top">
+                <main class="main-content" style="display: none;" id="main1">
+                  <div class="content-nav">
+                    <div class="left-icon">
+                      <div class="ipn">
+                        <a href="#"><i class="bi bi-square inp"></i></a>
+                        <a href="#" class="left-icon-1"><i class="bi bi-caret-down-fill "></i></a>
+                      </div>
+                      <div class="icn">
+                        <a href="#" class="left-icon-2"><i class="bi bi-arrow-clockwise "></i></a>
+                        <a href="#" class="left-icon-2"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+                <main  class="main-content"  id="main2" style="display: none;">
+                  <p>1</p>
+                </main>
+                <main  class="main-content"  id="main3" style="display: none;">
+                  <p>Đã gửi</p>
+                </main>
+                <main  class="main-content"  id="main4" style="display: none;">
+                  <p>3</p>
+                </main>
+                <main id="main5" style="display: none;"  class="main-content" >
+                  <p>4</p>
+                </main>
+                <main id="main6" style="display: none;"  class="main-content" >
+                  <p>5</p>
+                </main>
+                <main id="main7" style="display: none;"  class="main-content" >
+                  <p>6</p>
+                </main>
+                <main id="main8" style="display: none;"  class="main-content" >
+                  <p>7</p>
+                </main>
+                <main id="main9" style="display: none;"  class="main-content" >
+                  <p>8</p>
+                </main>
+                <main id="main10" style="display: none;"  class="main-content" >
+                  <p>9</p>
+                </main>
+                <main id="main11" style="display: none;"  class="main-content" >
+                  <p>10</p>
+                </main>
+                <main id="main12" style="display: none;"  class="main-content" >
+                  <p>11</p>
+                </main>
+                <main id="main13" style="display: none;"  class="main-content" >
+                  <p>1ádasd</p>
+                </main>
+                <main id="main14" style="display: none;"  class="main-content" >
+                  <p>13</p>
+                </main>
+                <aside class="menu-right" >
+                  <div class="img-top" id="menu__right" style="display: block;">
                     <a href=""><img src="./img/calendar_2x.png" alt=""></a>
                     <a href=""><img src="./img/keep_2x.png" alt=""></a>
                     <a href=""><img src="./img/tasks2_2x.png" alt=""></a>
@@ -289,9 +344,9 @@
                   </div>
                   <div class="icon-down">
                     <i class="fas fa-plus icon-plus"></i>
-                    <i class="fas fa-chevron-right icon-right"></i>
+                    <i class="fas fa-chevron-right icon-right" onclick="iconright()"></i>
                   </div>
-                </aside> 
+                </aside>
             </div>
         </section>
         <div class="send-mail" style="display: none;" id="sendto">
@@ -308,21 +363,21 @@
           <div class="main">
             <div class="address">
               <a href="#" class="add1">Đến</a>
-              <input type="textarea">
+              <input type="textarea" id="input__dc">
               <a href="#" class="add2">Cc</a>
               <a href="#" class="add2">Bcc</a>
             </div>
             <div class="line"></div>
             <div class="tittle">
               <a href="">Chủ đề</a>
-              <input type="text">
+              <input type="text" id="input__cd">
             </div>
             <div class="line"></div>
             <div class="inbox">
-              <input type="text">
+              <input type="text" id="input__nd">
             </div>
             <div class="icon">
-              <button><a href="">Gửi<i class="bi bi-caret-down-fill"></i></a></button>  
+              <button onclick="send__mail()"><a href="">Gửi<i class="bi bi-caret-down-fill"></i></a></button>  
             </div>
           </div>
         </div> 
