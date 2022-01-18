@@ -817,6 +817,7 @@ header .h-search{
    background-color: #fff;
    width: 40%;
    height: 70%;
+ 
    max-width: 575px;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
@@ -825,6 +826,10 @@ header .h-search{
    border: 1px solid whitesmoke;
    justify-content: space-between;
    box-shadow: 0px 5px 7px 8px rgba(0, 0, 0, 0.24);
+   /* width: 90%;
+   height: 80%;
+   border-radius: 10px;
+   margin-bottom: 50px; */
  }
 
  .send-mail .header{
@@ -843,18 +848,20 @@ header .h-search{
  }
 
  .send-mail .header .header-right{
+    display: flex;
     text-align: center;
     margin-left: 380px;
     align-items: center;
+    justify-content: space-between;
  }
 
- .send-mail .header .header-right a{
+ .send-mail .header .header-right p{
     color: white;
     margin-right: 6px;
     padding: 4px ;
  }
 
- .send-mail .header .header-right a:hover{
+ .send-mail .header .header-right p:hover{
     background-color: gray;
 }
 
@@ -947,15 +954,45 @@ header .h-search{
    border-radius: 5px;
    border: 1px;
    box-sizing: border-box;
+
 }
 
-.send-mail .main .icon button a{
+.send-mail .main .icon button p{
    font-size: 15px;
    text-decoration: none;
    color: white;
 }
 
-.send-mail .main .icon button a i{
+.send-mail .main .icon button p i{
    font-size: 10px;
    margin-left: 8px;
 }
+/* css for button */
+
+.main-content .button__header{
+   display: flex;
+   margin: 10px;
+   border-bottom: 1px solid  rgba(0, 0, 0, 0.1);
+   height: 60px;
+
+}
+.main-content .button__header button{
+   display: flex; 
+   margin-left: 10px;
+   justify-content: space-between; 
+   width: auto;
+   height: 36px; 
+   align-items: center;
+   box-sizing: border-box;
+   border: 1px solid  rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
+.main-content .button__header button i:first-child{
+   color: cornflowerblue;
+   font-size: 20px;
+}
+.main-content .button__header button i{
+   padding: 10px;
+   font-size: 15x;
+}
+
