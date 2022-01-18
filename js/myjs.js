@@ -314,9 +314,17 @@ function nav14(){
     document.getElementById('main').style.display = "none";
    }
 }
-function iconright(){
-  if(document.getElementById('menu__right').style.display = 'block'){
-    document.getElementById('menu__right').style.display = 'none';
-    document.getElementById('main').style.width = 'cacl'
-  }
+var today = new Date();
+var date = today.getDate()+' '+'thg'+' '+(today.getMonth()+1);
+function send__mail(){
+  document.getElementById('iconc').innerHTML = '<i class="bi bi-square inp"></i>'+''+'<i class="bi bi-star"></i>'+''+'<i class="far fa-bookmark">';
+  document.getElementById('toi').innerHTML = 'Tới: '
+  document.getElementById('ten').innerHTML = document.getElementById('input__ten').value;
+  document.getElementById('tm').innerHTML = document.getElementById('input__cd').value;
+  document.getElementById('qq').innerHTML = '-';
+  document.getElementById('nd').innerHTML = document.getElementById('input__nd').value;
+  document.getElementById('date').innerHTML = date;
+}
+function out(){
+  document.getElementById('sendto').style.display = 'none';
 }
